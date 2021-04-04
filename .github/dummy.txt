@@ -1,1 +1,0 @@
-just a dummy file to verify the checkout behaviour
