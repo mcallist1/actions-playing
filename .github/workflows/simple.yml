@@ -3,7 +3,7 @@ name: Shell Commands
 on: [push]
 
 jobs:
-  run-shell-command:
+  run-shell-commands:
     runs-on: ubuntu-latest
     steps: 
       - name: echo a greeting
@@ -16,4 +16,12 @@ jobs:
         run: |
            import platform
            print(platform.processor())
-        shell: python   
+        shell: python
+  run-windows-commands:
+    runs-on: windows-latest
+    steps: 
+      - name: directory powershell
+        run: Get-Location
+      - name: directory bash
+        run: pwd
+        shell: bash  
