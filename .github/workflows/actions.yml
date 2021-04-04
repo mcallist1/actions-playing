@@ -9,10 +9,16 @@ jobs:
       - name: List Files
         run: | 
           pwd
-          ls
+          ls -a
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: List Files after checkout
+        run: | 
+          pwd
+          ls -a      
       - name: Simple JS Action
         id: greeter
-        uses: actions/hello-world-javascript-action@v1.1
+        uses: actions/hello-world-javascript-action@v1
         with:
           who-to-greet: Tom
       - name: Log Greeting Time
