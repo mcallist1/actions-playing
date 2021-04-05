@@ -1,5 +1,6 @@
 name: Shell Commands
 
+# events that cause the below jobs to run
 on: [push]
 
 jobs:
