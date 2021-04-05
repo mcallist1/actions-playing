@@ -4,6 +4,7 @@ name: Actions Workflow
 
 on:
   push:
+  issues:
   pull_request:
      types: [closed, assigned, opened, closed]
 
